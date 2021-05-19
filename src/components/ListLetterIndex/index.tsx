@@ -9,6 +9,7 @@ export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
   onPressLetter,
   indexLetterStyle,
   indexLetterContainerStyle,
+  indexContainerStyle,
   renderCustomIndexLetter
 }) => {
   const onRenderCustomIndexLetter = ({ item, index }: { item: ISectionData, index: number }) => {
@@ -32,7 +33,7 @@ export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
   };
 
   return (
-    <View style={styles.letterIndexContainer}>
+    <View style={[styles.letterIndexContainer, indexContainerStyle]}>
       <FlatList
         contentContainerStyle={styles.letterIndexList}
         data={sectionData}

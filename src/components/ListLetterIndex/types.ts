@@ -5,5 +5,6 @@ export interface ListLetterIndexProps {
     sectionData: ISectionData[];
     indexLetterStyle?: AlphabetListProps["indexLetterStyle"],
     indexLetterContainerStyle?: AlphabetListProps["indexLetterContainerStyle"],
+    indexContainerStyle?: AlphabetListProps["indexContainerStyle"],
     renderCustomIndexLetter?: AlphabetListProps["renderCustomIndexLetter"],
 }
